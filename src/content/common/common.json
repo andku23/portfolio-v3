@@ -1,30 +1,30 @@
 {
-    "name": "Hrishikesh Paul",
+    "name": "Andrew Kurano",
     "logoType": {
-        "mobile": "HP",
-        "desktop": "Hrishikesh Paul"
+        "mobile": "Andrew Kurano",
+        "desktop": "Andrew Kurano"
     },
-    "mainPicture": "/assets/HP.webp",
-    "mainPictureJPG": "/assets/HP.jpeg",
-    "pronunciation": "/ri-shi-kaysh/",
-    "audioFile": "/assets/name-pro.mp3",
+    "mainPicture": "",
+    "mainPictureJPG": "",
+    "pronunciation": "",
+    "audioFile": "",
     "cssVarPrefix": "hp",
-    "email": "hrishikeshpaul12@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/hrishikeshpaul/",
-    "github": "https://github.com/hrishikeshpaul",
-    "resume": "https://docs.google.com/viewer?url=https://docs.google.com/document/d/1s3G7PiPHlK3Ett_W-WUU01GQnsggiLrWZB3IiMAgBEk/export?format=pdf",
+    "email": "kuranoandrew@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/andrew-kurano",
+    "github": "https://github.com/andku23",
+    "resume": "",
     "socials": [
         {
             "type": "linkedin",
-            "link": "https://www.linkedin.com/in/hrishikeshpaul/"
+            "link": "https://www.linkedin.com/in/andrew-kurano"
         },
         {
             "type": "github",
-            "link": "https://github.com/hrishikeshpaul"
+            "link": "https://github.com/andku23"
         },
         {
             "type": "mail",
-            "link": "mailto:hrishikeshpaul12@gmail.com"
+            "link": "mailto:kuranoandrew@gmail.com"
         }
     ]
 }

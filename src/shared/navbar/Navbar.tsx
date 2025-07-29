@@ -38,18 +38,6 @@ export const Navbar: FC = () => {
                             >
                                 Work
                             </Button>
-                            <Button
-                                variant="link"
-                                color={navItemColor}
-                                textDecoration={currentPage === AboutPageId ? "underline" : "none"}
-                                textDecorationThickness="2px"
-                                textDecorationColor="primary.500"
-                                onClick={() => toSection(AboutPageId)}
-                                data-aos="fade"
-                                data-aos-delay="300"
-                            >
-                                About
-                            </Button>
                             <Button variant="link" onClick={onResumeOpen} data-aos="fade" data-aos-delay="400">
                                 Resume
                             </Button>

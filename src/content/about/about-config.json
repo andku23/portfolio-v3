@@ -2,23 +2,10 @@
     "educations": [
         {
             "id": "edu-1",
-            "school": "Indiana University",
-            "degree": "Master of Science in Computer Science",
-            "duration": "Aug 2019 - May 2021",
-            "content": [
-                "GPA: 4/4",
-                "Courses: Software Engineering, Distributed Systems, Operating Systems, Advanced Algorithms, Experience Design"
-            ]
-        },
-        {
-            "id": "edu-2",
-            "school": "Manipal University",
-            "degree": "Bachelors in Computer Engineering",
-            "duration": "Aug 2015 - Jul 2019",
-            "content": [
-                "GPA: 8/10",
-                "Courses: Data Structures, OOP, Algorithms, Software Engineering, Computer Networks, Artificial Intelligence"
-            ]
+            "school": "University of Hawai'i at Manoa",
+            "degree": "Bachelor of Science in Computer Engineering",
+            "duration": "Sep 2014 - May 2018",
+            "content": []
         }
     ],
     "experiences": [

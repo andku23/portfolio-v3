@@ -42,7 +42,7 @@ export const OtherProjectCard: FC<Props> = ({ id, title, demo, github, tags, des
                     </Text>
                     <Tags tags={tags} id={id} size="xs" />
                 </Box>
-                <ProjectCardFooter readMore={readMore} github={github} demo={demo} />
+                <ProjectCardFooter readMore={readMore} sizzle={github} demo={demo} />
             </Flex>
         </Flex>
     );

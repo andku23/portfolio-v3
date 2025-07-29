@@ -6,7 +6,7 @@ import { ArrowRightIcon, GitHubIcon, LinkIcon } from "utils/Icons";
 import { open } from "utils/Functions";
 
 interface GitHubButtonProps {
-    github?: string;
+    sizzle?: string;
     display?: any;
 }
 
@@ -36,10 +36,10 @@ export const ReadMore: FC<ReadMoreProps> = ({ readMore }) => {
     ) : null;
 };
 
-export const GitHubButton: FC<GitHubButtonProps> = ({ github, display }) => {
+export const SizzleReel: FC<GitHubButtonProps> = ({ sizzle, display }) => {
     const as = useBreakpointValue({ base: IconButton, lg: Button });
 
-    return github ? (
+    return sizzle ? (
         <Button
             data-aos="fade"
             data-aos-delay="400"
@@ -47,11 +47,9 @@ export const GitHubButton: FC<GitHubButtonProps> = ({ github, display }) => {
             variant="secondary"
             py="5"
             display={display}
-            leftIcon={<GitHubIcon />}
-            icon={<GitHubIcon />}
-            onClick={() => open(github)}
+            onClick={() => open(sizzle)}
         >
-            GitHub
+            Overview
         </Button>
     ) : null;
 };
@@ -74,13 +72,13 @@ export const LiveDemo: FC<LiveDemoProps> = ({ demo, display }) => {
     ) : null;
 };
 
-export const ProjectCardFooter: FC<Props> = ({ readMore, github, demo }) => {
+export const ProjectCardFooter: FC<Props> = ({ readMore, sizzle, demo }) => {
     return (
         <Flex justifyContent={readMore ? "space-between" : "flex-end"} alignItems="center" pt="8">
             <ReadMore readMore={readMore} />
-            <Flex gap="4" justifyContent="space-between" alignItems="center" display={demo || github ? "flex" : "none"}>
+            <Flex gap="4" justifyContent="space-between" alignItems="center" display={demo || sizzle ? "flex" : "none"}>
+                <SizzleReel sizzle={sizzle} />
                 <LiveDemo demo={demo} />
-                <GitHubButton github={github} />
             </Flex>
         </Flex>
     );

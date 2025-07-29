@@ -1,10 +1,9 @@
-Welcome 👋 I'm a _Frontend Software Engineer_ at [Reputation](https://reputation.com/) based out of Chicago, Illinois. I recently graduated from Indiana University with a Masters degree in Computer Science and I'm passionate about **Software Development**, **UX Design** and **Artificial Intelligence**.
-
-I'm currently working with,
-
--   React (TS)
--   NodeJS
--   Flask (Python)
--   HTML/SCSS
--   WebSockets
+Hi! I'm a front-end web developer who mainly specializes in 3D related web projects.
+The majority of my experience is in creating PlayCanvas/VueJS apps that leverage PlayCanvas as a 3D game engine, and Vue for front-end UI.  However I also have a broad knowledge in many different platforms such as: 
+-   
+- React
+-   Unity3D
+-   Blender
+-   Heroku
+-   AWS
 -   GraphQL

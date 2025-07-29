@@ -25,7 +25,6 @@ const OtherProjects = lazy(() =>
         default: module.OtherProjects,
     })),
 );
-const About = lazy(() => import("pages/about/About").then((module) => ({ default: module.About })));
 
 const Loader: FC = () => (
     <Center w="100%" h="100%">
@@ -48,14 +47,6 @@ export const App: FC = () => {
                     <Box id={WorkPageId}>
                         <PageHeader label="Featured Projects" />
                         <FeaturedProjects />
-
-                        <PageHeader id="page-other-projects" label="Other Projects" />
-                        <OtherProjects />
-                    </Box>
-
-                    <Box id={AboutPageId}>
-                        <PageHeader label="About Me" />
-                        <About />
                     </Box>
                 </Box>
                 <Footer />

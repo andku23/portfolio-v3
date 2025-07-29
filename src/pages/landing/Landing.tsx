@@ -6,6 +6,7 @@ import { Content, configs, useContent, MarkdownFile } from "shared/content/Conte
 import { Socials } from "shared/socials/Socials";
 import { WorkPageId } from "utils/useScroll";
 import { ChevronDownIcon } from "utils/Icons";
+import { PrimaryColors } from "../../theme/colors/Colors";
 
 export const Landing: FC = () => {
     const content = useContent(MarkdownFile.Landing);
@@ -19,9 +20,25 @@ export const Landing: FC = () => {
     };
 
     return (
-        <Box id="page-landing">
+        <Box id="page-landing"  style={{
+            backgroundColor: PrimaryColors["200"],
+            padding: '5%'
+        }}>
             <Center pb={{ base: 16, md: 32 }}>
                 <HStack spacing="16" justifyContent="space-between" alignItems="flex-start">
+
+                    <Container
+                        alignItems="center"
+                        flex="0.4"
+                        display={{ base: "none", lg: "block" }}
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        <picture>
+                            <source type="image/jpeg" src={configs.landing.jpg}></source>
+                            <Image borderRadius="xl" src={configs.landing.jpg} alt={`face-cover-image`} />
+                        </picture>
+                    </Container>
                     <Stack flex={{ base: "1", lg: "0.6" }} spacing="16">
                         <Stack spacing="8">
                             <Heading
@@ -39,31 +56,8 @@ export const Landing: FC = () => {
 
                         <Socials delay={1000} />
                     </Stack>
-                    <Container
-                        alignItems="center"
-                        flex="0.4"
-                        display={{ base: "none", lg: "block" }}
-                        data-aos="fade-up"
-                        data-aos-delay="400"
-                    >
-                        <picture>
-                            <source type="image/webp" src={configs.landing.picture}></source>
-                            <source type="image/jpeg" src={configs.landing.jpg}></source>
-                            <Image borderRadius="xl" src={configs.landing.jpg} alt={`face-cover-image`} />
-                        </picture>
-                    </Container>
                 </HStack>
             </Center>
-            <Flex justifyContent="center" data-aos="fade" data-aos-delay="1400">
-                <Button
-                    as={IconButton}
-                    fontSize="3xl"
-                    variant="icon"
-                    aria-label="down arrow button"
-                    icon={<ChevronDownIcon />}
-                    onClick={scrollIntoView}
-                ></Button>
-            </Flex>
         </Box>
     );
 };

@@ -3,6 +3,7 @@ import { FC } from "react";
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { Tags } from "shared/tags/Tags";
 import { ProjectCardFooter } from "shared/project-card-footer/ProjectCardFooter";
+import { PrimaryColors } from "../../../theme/colors/Colors";
 
 export enum ImagePosition {
     Right,
@@ -11,7 +12,6 @@ export enum ImagePosition {
 interface Props {
     id: string;
     title: string;
-    year: string;
     location: string;
     demo?: string;
     github?: string;
@@ -21,6 +21,9 @@ interface Props {
     image: string;
     imagePosition: ImagePosition;
     jpg: string;
+    video: string;
+    bgcolor: string;
+    textcolor: string;
 }
 
 const ImagePositionLayoutMapper: Record<ImagePosition, "row" | "row-reverse"> = {
@@ -49,8 +52,10 @@ export const FeaturedProjectCard: FC<Props> = ({
     image,
     imagePosition,
     location,
-    year,
     jpg,
+    video,
+    bgcolor,
+    textcolor
 }) => {
     return (
         <Flex
@@ -58,6 +63,11 @@ export const FeaturedProjectCard: FC<Props> = ({
             id="featured-project-card"
             py={{ base: "12", md: "12", lg: '28' }}
             direction={{ base: "column-reverse", lg: ImagePositionLayoutMapper[imagePosition] }}
+            style={{
+                backgroundColor: bgcolor,
+                padding: '5%',
+                color: textcolor
+            }}
         >
             <Flex
                 h="auto"
@@ -80,7 +90,6 @@ export const FeaturedProjectCard: FC<Props> = ({
                         data-aos-delay="100"
                         data-aos-offset="200"
                     >
-                        {year} • {location}
                     </Text>
 
                     <Box
@@ -108,7 +117,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                     <Tags tags={tags} id={id} />
                 </Box>
 
-                <ProjectCardFooter readMore={readMore} github={github} demo={demo} />
+                <ProjectCardFooter readMore={readMore} sizzle={github} demo={demo} />
             </Flex>
 
             <Box
