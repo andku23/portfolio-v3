@@ -6,7 +6,7 @@
         "demo": "https://trigger-dev-public.s3-us-west-1.amazonaws.com/ge-lighting-ces2021-demo/develop/index.html ",
         "github": "https://www.triggerxr.com/work/ge-lighting-ces-quicklook-and-virtual-home",
         "tags": ["VueJS", "PlayCanvas", "NodeJS", "WebGL"],
-        "description": "A web based lighting demo to showcase GE Lighting's various automated lighting setups and controls.",
+        "description": "A web based lighting demo to showcase GE Lighting's various automated lighting setups and controls.  The largest tech lift on this project was figuring out a good system to tie the Vue side UI controls to the PlayCanvas timeline/curve system we created... and figuring out the baked/dynamic lighting combo.",
         "image": "/assets/featured-projects/gelighting.png",
         "jpg": "/assets/featured-projects/gelighting.png",
         "video": "/assets/featured-projects/gelighting.mp4",
@@ -26,5 +26,19 @@
         "video": "/assets/featured-projects/gelighting.mp4",
         "bgcolor": "#111111",
         "textcolor": "#dedede"
+    },
+    {
+        "id": "featured-project-2",
+        "title": "AWE Hot Ones Panel",
+        "location": "",
+        "demo": "",
+        "github": "https://awexr.com/usa-2025/agenda/1244-ar-you-sweating-yet-hot-wings-hotter-takes-on-geos",
+        "tags": [],
+        "description": "I had the good fortune of being able to do a panel at AWS with the one-and-only Joe Gabriel from Niantic. While the topics may have varied in seriousness, the true seriousness was the burning in my mouth because this was a hot-ones style interview. ",
+        "image": "/assets/featured-projects/awe.png",
+        "jpg": "/assets/featured-projects/awe.png",
+        "video": "/assets/featured-projects/gelighting.mp4",
+        "bgcolor": "white",
+        "textcolor": "black"
     }
 ]
