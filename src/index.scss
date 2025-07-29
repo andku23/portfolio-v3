@@ -9,10 +9,6 @@ body,
 #root {
   height: 100%;
 
-  *::selection {
-    background: var(--hp-colors-orange-200);
-    transition: all 0.25s ease-in-out !important;
-  }
 }
 
 .autograph__path {

@@ -22,7 +22,9 @@ export const Landing: FC = () => {
     return (
         <Box id="page-landing"  style={{
             backgroundColor: PrimaryColors["200"],
-            padding: '5%'
+            paddingLeft: '5%',
+            paddingRight: '5%',
+            paddingTop: '5%',
         }}>
             <Center pb={{ base: 16, md: 32 }}>
                 <HStack spacing="16" justifyContent="space-between" alignItems="flex-start">
