@@ -42,7 +42,6 @@ export const Navbar: FC = () => {
                                 Resume
                             </Button>
                         </HStack>
-                        <ColorModeButton />
                     </Flex>
 
                     <MenuDrawer
