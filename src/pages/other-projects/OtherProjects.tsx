@@ -5,6 +5,7 @@ import { configs } from "shared/content/Content";
 import { OtherProjectCard } from "pages/other-projects/other-project-card/OtherProjectCard";
 import { ChevronDownIcon, ChevronUpIcon } from "utils/Icons";
 
+
 const initialCount = 3;
 const incrementor = 3;
 

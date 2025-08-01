@@ -5,10 +5,14 @@ import { Image, Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { Tags } from "shared/tags/Tags";
 import { ProjectCardFooter } from "shared/project-card-footer/ProjectCardFooter";
 
+import {
+    LiveDemoButtonProps
+} from "../../../shared/project-card-footer/ProjectCardFooter";
+
 interface Props {
     id: string;
     title: string;
-    demo?: string;
+    demo?: LiveDemoButtonProps[];
     github?: string;
     tags: string[];
     description: string;

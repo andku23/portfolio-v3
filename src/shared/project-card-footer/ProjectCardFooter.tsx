@@ -4,6 +4,11 @@ import { Button, Flex, IconButton, useBreakpointValue } from "@chakra-ui/react";
 
 import { ArrowRightIcon, GitHubIcon, LinkIcon } from "utils/Icons";
 import { open } from "utils/Functions";
+import { configs } from "../content/Content";
+import {
+    FeaturedProjectCard,
+    ImagePosition,
+} from "../../pages/featured-projects/featured-project-card/FeaturedProjectCard";
 
 interface GitHubButtonProps {
     sizzle?: string;
@@ -15,11 +20,22 @@ interface ReadMoreProps {
 }
 
 interface LiveDemoProps {
-    demo?: string;
+    display?: any;
+    name: string;
+    url: string;
+}
+
+export interface LiveDemoButtonProps {
+    name: string;
+    url: string;
+}
+
+interface LiveDemoUpperProps {
+    demo?: LiveDemoButtonProps[];
     display?: any;
 }
 
-interface Props extends GitHubButtonProps, ReadMoreProps, LiveDemoProps {}
+interface Props extends GitHubButtonProps, ReadMoreProps, LiveDemoUpperProps {}
 
 export const ReadMore: FC<ReadMoreProps> = ({ readMore }) => {
     return readMore ? (
@@ -54,10 +70,10 @@ export const SizzleReel: FC<GitHubButtonProps> = ({ sizzle, display }) => {
     ) : null;
 };
 
-export const LiveDemo: FC<LiveDemoProps> = ({ demo, display }) => {
+export const LiveDemo: FC<LiveDemoProps> = ({ name, url, display }) => {
     const as = useBreakpointValue({ base: IconButton, lg: Button });
 
-    return demo ? (
+    return (
         <Button
             data-aos="fade"
             data-aos-delay="200"
@@ -65,11 +81,11 @@ export const LiveDemo: FC<LiveDemoProps> = ({ demo, display }) => {
             display={display}
             leftIcon={<LinkIcon fontSize="14pt" />}
             icon={<LinkIcon fontSize="14pt" />}
-            onClick={() => open(demo)}
+            onClick={() => open(url)}
         >
-            Live Demo
+            {name}
         </Button>
-    ) : null;
+    ) ;
 };
 
 export const ProjectCardFooter: FC<Props> = ({ readMore, sizzle, demo }) => {
@@ -78,7 +94,10 @@ export const ProjectCardFooter: FC<Props> = ({ readMore, sizzle, demo }) => {
             <ReadMore readMore={readMore} />
             <Flex gap="4" justifyContent="space-between" alignItems="center" display={demo || sizzle ? "flex" : "none"}>
                 <SizzleReel sizzle={sizzle} />
-                <LiveDemo demo={demo} />
+
+                {demo?.map((itm, idx) => (
+                    <LiveDemo name={itm.name} url={itm.url} />
+                ))}
             </Flex>
         </Flex>
     );

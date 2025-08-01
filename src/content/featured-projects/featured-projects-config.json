@@ -3,9 +3,14 @@
         "id": "featured-project-0",
         "title": "GE Lighting CES Demo  ",
         "location": "",
-        "demo": "https://trigger-dev-public.s3-us-west-1.amazonaws.com/ge-lighting-ces2021-demo/develop/index.html ",
+        "demo": [
+            {
+                "name": "Live Demo",
+                "url": "https://trigger-dev-public.s3-us-west-1.amazonaws.com/ge-lighting-ces2021-demo/develop/index.html "
+            }
+        ],
         "github": "https://www.triggerxr.com/work/ge-lighting-ces-quicklook-and-virtual-home",
-        "tags": ["VueJS", "PlayCanvas", "NodeJS", "WebGL"],
+        "tags": [],
         "description": "A web based lighting demo to showcase GE Lighting's various automated lighting setups and controls.  The largest tech lift on this project was figuring out a good system to tie the Vue side UI controls to the PlayCanvas timeline/curve system we created... and figuring out the baked/dynamic lighting combo.",
         "image": "/assets/featured-projects/gelighting.jpg",
         "jpg": "/assets/featured-projects/gelighting.jpg",
@@ -17,9 +22,14 @@
         "id": "featured-project-1",
         "title": "Sony Pet Venomizer",
         "location": "",
-        "demo": "https://trigger-dev-public.s3.us-west-1.amazonaws.com/sony-petvenomizer-mlwebsite/develop/index.html",
+        "demo": [
+            {
+                "name": "Live Demo",
+                "url": "https://trigger-dev-public.s3.us-west-1.amazonaws.com/sony-petvenomizer-mlwebsite/develop/index.html"
+            }
+        ],
         "github": "https://www.triggerxr.com/work/venomize-my-pet",
-        "tags": ["VueJS", "AWS", "NodeJS", "WebGL"],
+        "tags": [],
         "description": "A promotional app for the final Venom movie that leveraged Getty Images' custom trained ML model to convert pictures of peoples' pets into 'venomized' versions.  The back end for this project is no longer up now that the promotion for the movie ended, but the UI for the site can be seen.  It also has some amount of local image recognition to make sure personal data is not sent up as well.",
         "image": "/assets/featured-projects/venom.jpg",
         "jpg": "/assets/featured-projects/venom.jpg",
@@ -31,7 +41,7 @@
         "id": "featured-project-2",
         "title": "AWE Hot Ones! Panel",
         "location": "",
-        "demo": "",
+        "demo": [],
         "github": "https://awexr.com/usa-2025/agenda/1244-ar-you-sweating-yet-hot-wings-hotter-takes-on-geos",
         "tags": [],
         "description": "I had the fortune of being able to do a panel at AWE with the one-and-only Joe Gabriel from Niantic. While the topics may have varied in seriousness, the true seriousness was the burning in my mouth because this was a hot-ones style interview. ",
@@ -45,7 +55,7 @@
         "id": "featured-project-3",
         "title": "Google Brainwash",
         "location": "",
-        "demo": "",
+        "demo": [],
         "github": "https://www.triggerxr.com/work/google-home-project-brainwash",
         "tags": [],
         "description": "This is one of the most difficult projects that I have ever been on.  On top of using a completely different tech stack than what I was used to (PixieJS, Google Home Speech Intent), in addition to our scope being a bit greater than what the device could handle.  Sadly it seems to have been taken off the store, but luckily there does exist footage of it being used.",
@@ -60,7 +70,7 @@
         "id": "featured-project-4",
         "title": "Morgan Stanley PGA Tour Through Time",
         "location": "",
-        "demo": "",
+        "demo": [],
         "github": "https://www.triggerxr.com/work/tour-through-time-webar",
         "tags": [],
         "description": "This project is much more representative of the work I often found myself doing in XR.  This experience was linked to a specific golf course and users could go around to different holes and have a volumetric Justin Rose show the history that happened where they were standing.  While each individual part was not too hard, combining volumetric video, location locked content, achievement tracking, and 9 holes of content running on mobile, was certainly a challenge.",
@@ -74,14 +84,37 @@
         "id": "featured-project-5",
         "title": "Disney Avatar 2 Creature Creator",
         "location": "",
-        "demo": "https://www.avatar.com/keepouroceansamazing/creaturecreator/",
+        "demo": [
+            {
+                "name": "Make a Fish",
+                "url": "https://www.avatar.com/keepouroceansamazing/creaturecreator/"
+            },
+            {
+                "name": "Underwater Scene",
+                "url": "https://www.avatar.com/keepouroceansamazing/creaturecreator/#/FollowFish?name=VPRHEY"
+            }
+        ],
         "github": "https://www.triggerxr.com/work/avatar-the-way-of-water",
-        "tags": ["backend is down, but creator still works"],
+        "tags": ["PS: use it on mobile", "(or simulate mobile on browser)"],
         "description": "This experience was made as part of Disney's Avatar 2 conservation campaign.  Essentially the app is just a fish tank app, where you create a fish, and then you can let it swim around in a larger aquarium app.  However the creator was a web app, and the aquariums were both web AND Unity, meaning the fish data had to be transformed into some data storable on a database.  The true hardest part, was getting the underwater scene to optimize to running on phone.  Lot of batching and writing instancing shaders on this one. ",
         "image": "/assets/featured-projects/fish.jpg",
         "jpg": "/assets/featured-projects/fish.jpg",
         "video": "/assets/featured-projects/gelighting.mp4",
         "bgcolor": "white",
         "textcolor": "black"
+    },
+    {
+        "id": "featured-project-6",
+        "title": "Mercedes F1 Garage Tour",
+        "location": "",
+        "demo": [],
+        "github": "https://www.triggerxr.com/work/mercedes-amg-petronas-f1-team-vip-garage-tour-2024",
+        "tags": [],
+        "description": "This experience was originally made for the F1 event in vegas to showcase the F1 Garage, and we added additional features like an interactive reflex-testing game similar to what the F1 drivers train on. I spent most of my time building said reflex game, and helping port the app over to the Quest platform.",
+        "image": "/assets/featured-projects/f1.jpg",
+        "jpg": "/assets/featured-projects/f1.jpg",
+        "video": "/assets/featured-projects/gelighting.mp4",
+        "bgcolor": "black",
+        "textcolor": "white"
     }
 ]

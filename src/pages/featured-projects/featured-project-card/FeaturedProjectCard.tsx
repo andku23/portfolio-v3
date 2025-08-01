@@ -5,15 +5,20 @@ import { Tags } from "shared/tags/Tags";
 import { ProjectCardFooter } from "shared/project-card-footer/ProjectCardFooter";
 import { PrimaryColors } from "../../../theme/colors/Colors";
 
+import {
+    LiveDemoButtonProps
+} from "../../../shared/project-card-footer/ProjectCardFooter";
+
 export enum ImagePosition {
     Right,
     Left,
 }
+
 interface Props {
     id: string;
     title: string;
     location: string;
-    demo?: string;
+    demo?: LiveDemoButtonProps[];
     github?: string;
     tags: string[];
     description: string;
