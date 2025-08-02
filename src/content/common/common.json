@@ -11,16 +11,12 @@
     "cssVarPrefix": "hp",
     "email": "kuranoandrew@gmail.com",
     "linkedin": "https://www.linkedin.com/in/andrew-kurano",
-    "github": "https://github.com/andku23",
-    "resume": "https://andku23.github.io/Resume_Andrew.pdf",
+    "github": "",
+    "resume": "https://andku23.github.io/Resume-AndrewKurano.pdf",
     "socials": [
         {
             "type": "linkedin",
             "link": "https://www.linkedin.com/in/andrew-kurano"
-        },
-        {
-            "type": "github",
-            "link": "https://github.com/andku23"
         },
         {
             "type": "mail",
